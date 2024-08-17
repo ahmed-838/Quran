@@ -1,0 +1,73 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file("local.properties")
+
+// Load local.properties if it exists
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader("UTF-8") { reader ->
+        localProperties.load(reader)
+    }
+}
+
+// Set the Flutter version code, defaulting to 1 if not specified in local.properties
+def flutterVersionCode = localProperties.getProperty("flutter.versionCode", "1")
+
+// Set the Flutter version name, defaulting to 1.0 if not specified in local.properties
+def flutterVersionName = localProperties.getProperty("flutter.versionName", "1.0")
+
+android {
+    namespace = "com.example.quran"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        // Specify your unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId = "com.example.quran"
+
+        // Configure minSdk and targetSdk versions based on Flutter settings.
+        minSdk = flutter.minSdkVersion
+        targetSdk = flutter.targetSdkVersion
+
+        // Set version code and version name for the app.
+        versionCode = flutterVersionCode.toInteger()
+        versionName = flutterVersionName
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'my-key-alias' // Replace with your actual key alias
+            keyPassword 'Shamsa838@' // Replace with your actual key password
+            storeFile file('my-release-key.jks') // Replace with the path to your keystore file
+            storePassword 'your-store-password' // Replace with your actual store password
+        }
+    }
+
+    buildTypes {
+        release {
+            // Enable code shrinking and resource shrinking to reduce APK size.
+            minifyEnabled true
+            shrinkResources true
+
+            // Use ProGuard for code optimization.
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            // Configure signing for release build.
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}

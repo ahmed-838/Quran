@@ -1,0 +1,140 @@
+name: quran
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  just_audio: ^0.9.39
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/background_image.jpg
+    - assets/logo.png
+    - assets/audio/abd_ulbast/001.mp3
+    - assets/audio/abd_ulbast/002.mp3
+    - assets/audio/abd_ulbast/003.mp3
+    - assets/audio/abd_ulbast/004.mp3
+    - assets/audio/abd_ulbast/005.mp3
+    - assets/audio/abd_ulbast/006.mp3
+    - assets/audio/abd_ulbast/007.mp3
+    - assets/audio/abd_ulbast/008.mp3
+    - assets/audio/abd_ulbast/009.mp3
+    - assets/audio/abd_ulbast/010.mp3
+    - assets/audio/abd_ulbast/011.mp3
+    - assets/audio/abd_ulbast/012.mp3
+    - assets/audio/abd_ulbast/013.mp3
+    - assets/audio/abd_ulbast/014.mp3
+    - assets/audio/abd_ulbast/015.mp3
+    - assets/audio/abd_ulbast/016.mp3
+    - assets/audio/abd_ulbast/017.mp3
+    - assets/audio/abd_ulbast/018.mp3
+    - assets/audio/abd_ulbast/019.mp3
+    - assets/audio/abd_ulbast/020.mp3
+    - assets/audio/abd_ulbast/021.mp3
+    - assets/audio/abd_ulbast/022.mp3
+    - assets/audio/abd_ulbast/023.mp3
+    - assets/audio/abd_ulbast/024.mp3
+    - assets/audio/abd_ulbast/025.mp3
+    - assets/audio/abd_ulbast/026.mp3
+    - assets/audio/abd_ulbast/027.mp3
+    - assets/audio/abd_ulbast/028.mp3
+    - assets/audio/abd_ulbast/029.mp3
+    - assets/audio/abd_ulbast/030.mp3
+    - assets/audio/abd_ulbast/031.mp3
+    - assets/audio/abd_ulbast/032.mp3
+    - assets/audio/abd_ulbast/033.mp3
+    - assets/audio/abd_ulbast/034.mp3
+    - assets/audio/abd_ulbast/035.mp3
+    - assets/audio/abd_ulbast/036.mp3
+    - assets/audio/abd_ulbast/037.mp3
+    - assets/audio/abd_ulbast/038.mp3
+    - assets/audio/abd_ulbast/039.mp3
+    - assets/audio/abd_ulbast/040.mp3
+    - assets/audio/abd_ulbast/041.mp3
+    - assets/audio/abd_ulbast/042.mp3
+    - assets/audio/abd_ulbast/043.mp3
+    - assets/audio/abd_ulbast/044.mp3
+    - assets/audio/abd_ulbast/045.mp3
+    - assets/audio/abd_ulbast/046.mp3
+    - assets/audio/abd_ulbast/047.mp3
+    - assets/audio/abd_ulbast/048.mp3
+    - assets/audio/abd_ulbast/049.mp3
+    - assets/audio/abd_ulbast/050.mp3
+    - assets/audio/abd_ulbast/051.mp3
+    - assets/audio/abd_ulbast/052.mp3
+    - assets/audio/abd_ulbast/053.mp3
+    - assets/audio/abd_ulbast/054.mp3
+    - assets/audio/abd_ulbast/055.mp3
+    - assets/audio/abd_ulbast/056.mp3
+    - assets/audio/abd_ulbast/057.mp3
+    - assets/audio/abd_ulbast/058.mp3
+    - assets/audio/abd_ulbast/059.mp3
+    - assets/audio/abd_ulbast/060.mp3
+    - assets/audio/abd_ulbast/061.mp3
+    - assets/audio/abd_ulbast/062.mp3
+    - assets/audio/abd_ulbast/063.mp3
+    - assets/audio/abd_ulbast/064.mp3
+    - assets/audio/abd_ulbast/065.mp3
+    - assets/audio/abd_ulbast/066.mp3
+    - assets/audio/abd_ulbast/067.mp3
+    - assets/audio/abd_ulbast/068.mp3
+    - assets/audio/abd_ulbast/069.mp3
+    - assets/audio/abd_ulbast/070.mp3
+    - assets/audio/abd_ulbast/071.mp3
+    - assets/audio/abd_ulbast/072.mp3
+    - assets/audio/abd_ulbast/073.mp3
+    - assets/audio/abd_ulbast/074.mp3
+    - assets/audio/abd_ulbast/075.mp3
+    - assets/audio/abd_ulbast/076.mp3
+    - assets/audio/abd_ulbast/077.mp3
+    - assets/audio/abd_ulbast/078.mp3
+    - assets/audio/abd_ulbast/079.mp3
+    - assets/audio/abd_ulbast/080.mp3
+    - assets/audio/abd_ulbast/081.mp3
+    - assets/audio/abd_ulbast/082.mp3
+    - assets/audio/abd_ulbast/083.mp3
+    - assets/audio/abd_ulbast/084.mp3
+    - assets/audio/abd_ulbast/085.mp3
+    - assets/audio/abd_ulbast/086.mp3
+    - assets/audio/abd_ulbast/087.mp3
+    - assets/audio/abd_ulbast/088.mp3
+    - assets/audio/abd_ulbast/089.mp3
+    - assets/audio/abd_ulbast/090.mp3
+    - assets/audio/abd_ulbast/091.mp3
+    - assets/audio/abd_ulbast/092.mp3
+    - assets/audio/abd_ulbast/093.mp3
+    - assets/audio/abd_ulbast/094.mp3
+    - assets/audio/abd_ulbast/095.mp3
+    - assets/audio/abd_ulbast/096.mp3
+    - assets/audio/abd_ulbast/097.mp3
+    - assets/audio/abd_ulbast/098.mp3
+    - assets/audio/abd_ulbast/099.mp3
+    - assets/audio/abd_ulbast/100.mp3
+    - assets/audio/abd_ulbast/101.mp3
+    - assets/audio/abd_ulbast/102.mp3
+    - assets/audio/abd_ulbast/103.mp3
+    - assets/audio/abd_ulbast/104.mp3
+    - assets/audio/abd_ulbast/105.mp3
+    - assets/audio/abd_ulbast/106.mp3
+    - assets/audio/abd_ulbast/107.mp3
+    - assets/audio/abd_ulbast/108.mp3
+    - assets/audio/abd_ulbast/109.mp3
+    - assets/audio/abd_ulbast/110.mp3
+    - assets/audio/abd_ulbast/111.mp3
+    - assets/audio/abd_ulbast/112.mp3
+    - assets/audio/abd_ulbast/113.mp3
+    - assets/audio/abd_ulbast/114.mp3
